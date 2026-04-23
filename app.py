@@ -68,7 +68,7 @@ def get_connection():
     Load the CSV into an in-memory SQLite database.
     Returns a sqlite3.Connection. All aggregation queries go through here.
     """
-    raw = pd.read_csv("ResaleFlatPricesBasedonApprovalDate2000Feb2012.csv")
+    raw = pd.read_csv("ResaleFlatPricesBasedonApprovalDate2000Feb2012_truncated.csv")
 
     # Parse month → year and quarter strings so SQL can GROUP BY them
     raw["year"] = pd.to_datetime(raw["month"]).dt.year
