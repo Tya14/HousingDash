@@ -1,6 +1,14 @@
 # Singapore HDB Resale Dashboard
 
-An interactive data analytics dashboard built with Streamlit to explore trends in Singapore’s HDB resale market (2000 – Feb 2012).  
+**Live App:** https://YOUR_STREAMLIT_LINK
+
+An interactive data analytics dashboard built with Streamlit to explore trends in Singapore’s HDB resale market (2005 – Feb 2012).  
+
+---
+
+## Preview
+
+![Dashboard Preview](screenshot.png)
 
 ---
 
@@ -8,7 +16,7 @@ An interactive data analytics dashboard built with Streamlit to explore trends i
 
 This dashboard enables users to explore resale flat transactions across towns, flat types, price ranges, and time periods.  
 
-### Key questions:
+### Key questions :
 - How have resale prices changed over time?
 - Which towns have higher average resale prices?
 - How do flat types and sizes influence pricing?
@@ -41,11 +49,15 @@ This dashboard enables users to explore resale flat transactions across towns, f
 ## Dataset
 
 - Source: Singapore Government Open Data Portal (data.gov.sg)  
-  - [Resale Flat Prices (Based on Approval Date), 2000 – Feb 2012](https://data.gov.sg/datasets/d_43f493c6c50d54243cc1eab0df142d6a/view?utm_source=chatgpt.com)  
+  https://data.gov.sg/datasets/d_43f493c6c50d54243cc1eab0df142d6a  
 - Provider: Housing & Development Board (HDB)  
-- Time range: January 2000 – February 2012 :contentReference[oaicite:1]{index=1}  
+- Original time range: January 2001 – February 2012  
 
-This dataset contains historical resale flat transaction records, including details such as:
+Due to file size constraints for deployment, the dataset was truncated to include transactions from **2005 – 2012**.  
+This subset preserves recent market trends while ensuring efficient loading and responsiveness in the deployed application.
+
+
+### Key fields:
 - Town  
 - Flat type and model  
 - Floor area (sqm)  
@@ -57,7 +69,7 @@ This dataset contains historical resale flat transaction records, including deta
 
 ## How It Works
 
-1. The raw CSV dataset is loaded into an in-memory SQLite database  
+1. The raw dataset is loaded into an in-memory SQLite database  
 2. Sidebar filters dynamically construct SQL queries  
 3. All aggregations are computed using SQL (no pandas filtering at query stage)  
 4. Results are visualised using Plotly within Streamlit  
@@ -69,9 +81,9 @@ This dataset contains historical resale flat transaction records, including deta
 
 ---
 
-## Running the App
+## Running the App Locally
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/hdb-resale-dashboard.git
+git clone https://github.com/Tya14/HousingDash.git
 cd hdb-resale-dashboard
