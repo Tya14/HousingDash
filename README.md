@@ -1,6 +1,6 @@
 # Singapore HDB Resale Dashboard
 
-**Live App:** https://YOUR_STREAMLIT_LINK
+**Live App:** https://housingdash-hfjkswgesykxjzxutwudv3.streamlit.app/
 
 An interactive data analytics dashboard built with Streamlit to explore trends in Singapore’s HDB resale market (2005 – Feb 2012).  
 
