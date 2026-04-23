@@ -9,10 +9,13 @@ An interactive data analytics dashboard built with Streamlit to explore trends i
 ## Preview
 
 
-https://github.com/user-attachments/assets/6c916f6f-a41d-45a3-a065-b75f5a7b559e
 
 
-![Dashboard Preview](screenshot.png)
+
+
+https://github.com/user-attachments/assets/bbbe4130-18a8-4ba5-9c9a-6ba25e4ac40a
+
+
 
 ---
 
